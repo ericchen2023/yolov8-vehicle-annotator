@@ -156,7 +156,7 @@ YOLOv8 車輛標註工具是一款專為車輛檢測任務設計的專業級標�
 #### Windows 系統
 ```batch
 # 1. 下載專案
-git clone https://github.com/ericchen2023/yolo-vehicle-annotator.git
+git clone https://github.com/ericchen2023/yolov8-vehicle-annotator.git
 cd yolo-vehicle-annotator
 
 # 2. 執行自動安裝
@@ -166,7 +166,7 @@ install.bat
 #### macOS/Linux 系統
 ```bash
 # 1. 下載專案
-git clone https://github.com/ericchen2023/yolo-vehicle-annotator.git
+git clone https://github.com/ericchen2023/yolov8-vehicle-annotator.git
 cd yolo-vehicle-annotator
 
 # 2. 給予執行權限
@@ -965,7 +965,7 @@ SOFTWARE.
 
 ```bash
 # 1. 下載專案
-git clone https://github.com/ericchen2023/yolo-vehicle-annotator.git
+git clone https://github.com/ericchen2023/yolov8-vehicle-annotator.git
 cd yolo-vehicle-annotator
 
 # 2. 執行安裝腳本
