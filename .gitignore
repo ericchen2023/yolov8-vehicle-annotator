@@ -15,6 +15,11 @@ exports/pascal voc/
 
 # Image directories (may contain test/sample images)
 images/
+# Exception: Keep test images 1-4
+!images/test1.jpg
+!images/test2.png
+!images/test3.png
+!images/test4.jpg
 test_images/
 sample_images/
 
