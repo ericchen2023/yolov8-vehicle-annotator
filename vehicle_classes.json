@@ -1,0 +1,66 @@
+{
+  "classes": [
+    {
+      "class_id": 0,
+      "name": "機車",
+      "color": {
+        "r": 255,
+        "g": 75,
+        "b": 75,
+        "a": 255
+      },
+      "description": "兩輪機車",
+      "enabled": true,
+      "shortcut_key": "1",
+      "emoji": "🏍",
+      "coco_class_id": 3
+    },
+    {
+      "class_id": 1,
+      "name": "汽車",
+      "color": {
+        "r": 75,
+        "g": 255,
+        "b": 75,
+        "a": 255
+      },
+      "description": "一般乘用車",
+      "enabled": true,
+      "shortcut_key": "2",
+      "emoji": "🚗",
+      "coco_class_id": 2
+    },
+    {
+      "class_id": 2,
+      "name": "卡車",
+      "color": {
+        "r": 75,
+        "g": 150,
+        "b": 255,
+        "a": 255
+      },
+      "description": "貨運卡車",
+      "enabled": true,
+      "shortcut_key": "3",
+      "emoji": "🚛",
+      "coco_class_id": 7
+    },
+    {
+      "class_id": 3,
+      "name": "公車",
+      "color": {
+        "r": 255,
+        "g": 215,
+        "b": 0,
+        "a": 255
+      },
+      "description": "公共交通巴士",
+      "enabled": true,
+      "shortcut_key": "4",
+      "emoji": "🚌",
+      "coco_class_id": 5
+    }
+  ],
+  "next_id": 4,
+  "version": "1.0"
+}
