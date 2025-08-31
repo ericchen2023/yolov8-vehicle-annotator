@@ -1,3 +1,40 @@
+# YOLOv8 Vehicle Annotator - .gitignore
+# ======================================
+# Updated: 2025-08-31
+# This file ignores files that should not be committed to version control
+
+# Project specific - YOLO Vehicle Annotator
+# ======================================
+
+# Export directories (generated annotation files)
+exports/
+exports/yolo/
+exports/coco/
+exports/json/
+exports/pascal voc/
+
+# Image directories (may contain test/sample images)
+images/
+test_images/
+sample_images/
+
+# Model files (large binary files)
+*.pt
+*.pth
+*.onnx
+*.engine
+yolo*.pt
+yolov8*.pt
+yolo11*.pt
+model_weights/
+models/
+
+# Cache and temporary files
+.cache/
+ultralytics/
+wandb/
+tensorboard/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -86,7 +123,7 @@ ipython_config.py
 .python-version
 
 # pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   According to pypa/pypenv#598, it is recommended to include Pipfile.lock in version control.
 #   However, in case of collaboration, if having platform-specific dependencies or dependencies
 #   having no cross-platform support, pipenv may install dependencies that don't work, or not
 #   install all needed dependencies.
@@ -129,13 +166,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Project specific
-# YOLO model files (too large for GitHub)
-*.pt
-yolo*.pt
-yolov8*.pt
-yolo11*.pt
-
 # IDE and editor files
 .vscode/
 .idea/
@@ -143,7 +173,7 @@ yolo11*.pt
 *.swo
 *~
 
-# OS generated files
+# OS generated files - Windows
 .DS_Store
 .DS_Store?
 ._*
@@ -151,41 +181,127 @@ yolo11*.pt
 .Trashes
 ehthumbs.db
 Thumbs.db
+desktop.ini
+*.lnk
+$RECYCLE.BIN/
+*.stackdump
+*.lock
+
+# OS generated files - macOS
+.AppleDouble
+.LSOverride
+Icon
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# OS generated files - Linux
+*~
+.directory
+.Trash-*
+.fuse_hidden*
+.nfs*
+
+# Qt/PyQt5 specific
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+Makefile*
+*build-*
+*.qm
+*.ts
 
 # Temporary files
 *.tmp
 *.temp
 *.bak
+*.backup
+*.orig
+*.rej
 
 # Log files
 *.log
 logs/
+log/
+*.log.*
 
 # Cache directories
 .cache/
 .pytest_cache/
 .mypy_cache/
+.coverage/
 
 # User specific files
 user_settings.json
 personal_config.json
+local_config.json
 
 # Test images and data
 test_images/
 sample_data/
 demo_files/
+training_data/
 
 # Build artifacts
 build/
 dist/
 *.spec
+*.exe
 
 # Database files
 *.db
 *.sqlite
 *.sqlite3
+*.db-journal
 
 # Configuration files that may contain sensitive data
 config.local.json
 secrets.json
 private_config.json
+api_keys.json
+
+# Project backup files
+*.bak
+*.backup
+*~
+
+# CUDA/GPU cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.cudnn/
+.nv/
+
+# YOLOv8 specific
+ultralytics/
+runs/
+wandb/
+tensorboard/
+*.pt
+*.pth
+*.onnx
+*.engine
+yolo*.pt
+yolov8*.pt
+yolo11*.pt
+
+# Export and annotation files
+annotations/
+labels/
+results/
+output/
+predictions/
+
+# Temporary project files
+temp/
+tmp/
+scratch/
